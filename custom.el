@@ -120,3 +120,13 @@
 (add-hook 'markdown-mode-hook 'turn-on-visual-line-mode)
 (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
 
+;; Make the font a little bigger in text-mode and markdown-mode
+(defun my-buffer-face-mode-bigger ()
+"Make font a little bigger in current buffer"
+(interactive)
+(setq buffer-face-mode-face '(:family "Anonymous Pro" :height 150 :width normal))
+(buffer-face-mode))
+
+(add-hook 'text-mode-hook 'my-buffer-face-mode-bigger)
+(add-hook 'markdown-mode-hook 'my-buffer-face-mode-bigger)
+
