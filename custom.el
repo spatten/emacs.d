@@ -15,7 +15,16 @@
 (load-theme 'solarized-light t)
 
 (textmate-mode)
-(autopair-global-mode) ;; enable autopair in all buffers
+
+;; enable electric-pair-mode in all buffers, and
+;; turn on pairing for quotes and back-ticks
+(electric-pair-mode t) 
+(setq electric-pair-pairs '(
+                            (?` . ?`)
+                            (?\" . ?\")
+                            (?\' . ?\')
+                            ) )
+
 
 (mouse-wheel-mode t)
 
