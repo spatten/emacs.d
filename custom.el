@@ -16,6 +16,15 @@
 
 (textmate-mode)
 
+;; Turn off the org-mode M-left and M-right keybindings as they
+;; drive me crazy
+(eval-after-load "org"
+  '(progn
+     (define-key org-mode-map (kbd "<M-S-left>") nil)
+     (define-key org-mode-map (kbd "<M-S-right>") nil)
+     (define-key org-mode-map (kbd "<M-left>") nil)
+     (define-key org-mode-map (kbd "<M-right>") nil)))
+
 ;; enable electric-pair-mode in all buffers, and
 ;; turn on pairing for quotes and back-ticks
 (electric-pair-mode t) 
