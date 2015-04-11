@@ -19,6 +19,10 @@
 ;; Turn off the org-mode M-left and M-right keybindings as they
 ;; drive me crazy.
 ;; http://stackoverflow.com/questions/17539007/remap-org-shiftmetaright-org-shiftmetaleft-to-shift-select-metaleft-word
+;; another option is to do
+;; (setq org-replace-disputed-keys t)
+;; see http://orgmode.org/manual/Conflicts.html
+http://orgmode.org/manual/Conflicts.html
 (eval-after-load "org"
   '(progn
      (define-key org-mode-map (kbd "<M-S-left>") nil)
