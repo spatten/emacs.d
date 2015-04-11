@@ -17,7 +17,8 @@
 (textmate-mode)
 
 ;; Turn off the org-mode M-left and M-right keybindings as they
-;; drive me crazy
+;; drive me crazy.
+;; http://stackoverflow.com/questions/17539007/remap-org-shiftmetaright-org-shiftmetaleft-to-shift-select-metaleft-word
 (eval-after-load "org"
   '(progn
      (define-key org-mode-map (kbd "<M-S-left>") nil)
