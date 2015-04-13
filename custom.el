@@ -22,7 +22,7 @@
 ;; another option is to do
 ;; (setq org-replace-disputed-keys t)
 ;; see http://orgmode.org/manual/Conflicts.html
-http://orgmode.org/manual/Conflicts.html
+;; http://orgmode.org/manual/Conflicts.html
 (eval-after-load "org"
   '(progn
      (define-key org-mode-map (kbd "<M-S-left>") nil)
