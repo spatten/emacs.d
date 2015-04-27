@@ -3,6 +3,16 @@
 ;; TODO:
 ;; whitespace-stripping
 
+;; Make backup (foo~) files in ~/.emacs-saves
+(setq backup-directory-alist `(("." . "~/.emacs-saves")))
+;; Slow but safe
+(setq backup-by-copying t)
+;; keep more than one backup of each file
+(setq delete-old-versions t
+  kept-new-versions 6
+  kept-old-versions 2
+  version-control t)
+
 ;; Always able to answer 'y' instead of 'yes'
 (defalias 'yes-or-no-p 'y-or-n-p)
 
