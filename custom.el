@@ -3,6 +3,9 @@
 ;; TODO:
 ;; whitespace-stripping
 
+;; turn off beeping
+(setq ring-bell-function 'ignore)
+
 ;; Make backup (foo~) files in ~/.emacs-saves
 (setq backup-directory-alist `(("." . "~/.emacs-saves")))
 ;; Slow but safe
