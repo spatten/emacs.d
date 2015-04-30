@@ -21,20 +21,20 @@
 
 (add-hook 'after-init-hook (lambda () (load "~/.emacs.d/custom.el")))
 
-;; Make it so that ruby-electric's expanding of quotes and braces is only turned on
-;; for pipes. This means it doesn't mess with autopair
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ruby-electric-expand-delimiters-list (quote (124))))
-;; (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- ;; )
+;; ;; Make it so that ruby-electric's expanding of quotes and braces is only turned on
+;; ;; for pipes. This means it doesn't mess with autopair
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(ruby-electric-expand-delimiters-list (quote (124))))
+;; ;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  ;; )
 
 ;; I like this older version of markdown-mode better as it doesn't
 ;; take-over M-<left> and M-<right> keys, which I use all the time

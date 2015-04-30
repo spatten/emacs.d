@@ -44,13 +44,16 @@
      (define-key org-mode-map (kbd "<M-right>") nil)))
 
 ;; enable electric-pair-mode in all buffers, and
-;; turn on pairing for quotes and back-ticks
+;; turn on pairing for double-quotes and back-ticks
+;; to turn on single-quotes, add this line:
+;; (?\"' . ?\')
 (electric-pair-mode t) 
 (setq electric-pair-pairs '(
                             (?` . ?`)
                             (?\" . ?\")
-                            (?\' . ?\')
                             ) )
+
+
 
 
 (mouse-wheel-mode t)
