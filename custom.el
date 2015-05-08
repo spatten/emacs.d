@@ -3,6 +3,17 @@
 ;; TODO:
 ;; whitespace-stripping
 
+;; https://github.com/purcell/exec-path-from-shell
+;; set environment variables
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
+;; rubocop
+(add-hook 'ruby-mode-hook 'rubocop-mode)
+
+;; scss linter
+(add-hook 'scss-mode-hook 'flycheck-mode)
+
 ;; turn off beeping
 (setq ring-bell-function 'ignore)
 
